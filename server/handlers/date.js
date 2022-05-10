@@ -24,6 +24,29 @@ const date = async (req, res) => {
 
 //---------------------------------------------------------------------------------------------------------------------
 
+const leapYear = async (req, res) => {
+
+    try {
+        const result = await dateModel.leapYear();
+
+        res.json({
+            data: result,
+            error: null
+        });
+
+    } catch (e) {
+        res.json({
+            data: null,
+            error: e.message
+        });
+    } finally {
+        res.end();
+    }
+};
+
+//---------------------------------------------------------------------------------------------------------------------
+
 module.exports = {
     date,
+    leapYear,
 };

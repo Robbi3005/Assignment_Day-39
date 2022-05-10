@@ -3,16 +3,16 @@ const dateHandler = require("../date.js");
 
 //---------------------------------------------------------------------------------------------------------------------
 
-test("today should return false", async () => {
+test("this year should return false", async () => {
 
     const request = httpMocks.createRequest({
         method: "GET",
-        url: "/is-weekend",
+        url: "/leap-year",
     });
 
     const response = httpMocks.createResponse();
 
-    await dateHandler.date(request, response);
+    await dateHandler.leapYear(request, response);
 
     expect(response._getJSONData()).toEqual({
         
