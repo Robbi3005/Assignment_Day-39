@@ -15,19 +15,25 @@ jest.mock("../../../storage/models/date.model", () => {
 
 test("[mock] year returned always true", async () => {
 
+    jest
+        .useFakeTimers()
+        .setSystemTime(new Date('2024-05-15'));
+
+    console.log(new Date());
+
     const request = httpMocks.createRequest({
         method: "GET",
         url: "/leap-year",
     });
-    
+
     const response = httpMocks.createResponse();
 
     dateModel.leapYear.mockResolvedValue(true);
-    
+
     await dateHandler.leapYear(request, response);
-    
+
     expect(response.statusCode).toEqual(200);
-    
+
     expect(response._getJSONData()).toEqual({
         data: true,
         error: null

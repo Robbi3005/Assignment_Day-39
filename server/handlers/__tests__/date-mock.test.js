@@ -15,19 +15,25 @@ jest.mock("../../../storage/models/date.model", () => {
 
 test("[mock] date returned always true", async () => {
 
+    jest
+        .useFakeTimers()
+        .setSystemTime(new Date('2022-05-15'));
+
+    console.log(new Date());
+
     const request = httpMocks.createRequest({
         method: "GET",
         url: "/is-weekend",
     });
-    
+
     const response = httpMocks.createResponse();
 
     dateModel.isWeekend.mockResolvedValue(true);
-    
+
     await dateHandler.date(request, response);
-    
+
     expect(response.statusCode).toEqual(200);
-    
+
     expect(response._getJSONData()).toEqual({
         data: true,
         error: null
