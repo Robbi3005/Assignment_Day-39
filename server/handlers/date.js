@@ -2,16 +2,15 @@ const dateModel = require("../../storage/models/date.model");
 
 //---------------------------------------------------------------------------------------------------------------------
 
-const date = async (req, res) => {
-
+const date = async (_, res) => {
     try {
         const result = await dateModel.isWeekend();
+        console.log(result);
 
         res.json({
             data: result,
             error: null
         });
-
     } catch (e) {
         res.json({
             data: null,
@@ -24,10 +23,12 @@ const date = async (req, res) => {
 
 //---------------------------------------------------------------------------------------------------------------------
 
-const leapYear = async (req, res) => {
+const leapYear = async (_, res) => {
 
     try {
         const result = await dateModel.leapYear();
+
+        console.log(result);
 
         res.json({
             data: result,

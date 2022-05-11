@@ -1,36 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1652234083988" clover="3.2.0">
-  <project timestamp="1652234083989" name="All files">
-    <metrics statements="19" coveredstatements="17" conditionals="10" coveredconditionals="6" methods="4" coveredmethods="4" elements="33" coveredelements="27" complexity="0" loc="19" ncloc="19" packages="2" files="2" classes="2"/>
+<coverage generated="1652283596005" clover="3.2.0">
+  <project timestamp="1652283596006" name="All files">
+    <metrics statements="23" coveredstatements="21" conditionals="10" coveredconditionals="8" methods="4" coveredmethods="4" elements="37" coveredelements="33" complexity="0" loc="23" ncloc="23" packages="2" files="2" classes="2"/>
     <package name="server.handlers">
-      <metrics statements="14" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <metrics statements="16" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="date.js" path="E:\Robbi\Project\FWD Course\VS Code\VS Code - Testing\Assigment\Day 39 - 1\server\handlers\date.js">
-        <metrics statements="14" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <metrics statements="16" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="4" type="stmt"/>
         <line num="5" count="4" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
         <line num="7" count="2" type="stmt"/>
         <line num="8" count="2" type="stmt"/>
         <line num="10" count="2" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
-        <line num="27" count="4" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
         <line num="29" count="2" type="stmt"/>
-        <line num="30" count="2" type="stmt"/>
-        <line num="32" count="2" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="43" count="2" type="stmt"/>
-        <line num="49" count="4" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="50" count="4" type="stmt"/>
       </file>
     </package>
     <package name="storage.models">
-      <metrics statements="5" coveredstatements="5" conditionals="10" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <metrics statements="7" coveredstatements="7" conditionals="10" coveredconditionals="8" methods="2" coveredmethods="2"/>
       <file name="date.model.js" path="E:\Robbi\Project\FWD Course\VS Code\VS Code - Testing\Assigment\Day 39 - 1\storage\models\date.model.js">
-        <metrics statements="5" coveredstatements="5" conditionals="10" coveredconditionals="6" methods="2" coveredmethods="2"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="7" count="1" type="cond" truecount="3" falsecount="1"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="20" count="1" type="cond" truecount="3" falsecount="3"/>
-        <line num="27" count="2" type="stmt"/>
+        <metrics statements="7" coveredstatements="7" conditionals="10" coveredconditionals="8" methods="2" coveredmethods="2"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="22" count="2" type="cond" truecount="4" falsecount="2"/>
+        <line num="29" count="4" type="stmt"/>
       </file>
     </package>
   </project>
