@@ -7,7 +7,7 @@ function isWeekend() {
     return today === 0 || today === 6 ? true : false;
 }
 
-console.log(isWeekend());
+// console.log(isWeekend());
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -20,7 +20,7 @@ function leapYear() {
     return (thisYear % 400) ? ((thisYear % 100) ? ((thisYear % 4) ? false : true) : false) : true;
 }
 
-console.log(leapYear());
+// console.log(leapYear());
 
 //---------------------------------------------------------------------------------------------------------------------
 
