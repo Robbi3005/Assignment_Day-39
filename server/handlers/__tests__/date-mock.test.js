@@ -4,22 +4,22 @@ const dateModel = require("../../../storage/models/date.model");
 
 //---------------------------------------------------------------------------------------------------------------------
 
-jest.mock("../../../storage/models/date.model", () => {
+// jest.mock("../../../storage/models/date.model", () => {
 
-    return {
-        isWeekend: jest.fn()
-    };
-})
+//     return {
+//         isWeekend: jest.fn()
+//     };
+// })
 
 //---------------------------------------------------------------------------------------------------------------------
 
-test("[mock] date returned always true", async () => {
+test("[mock] date returned always 2022-05-15", async () => {
 
     jest
         .useFakeTimers()
         .setSystemTime(new Date('2022-05-15'));
 
-    console.log(new Date());
+    console.log(new Date().getDay());
 
     const request = httpMocks.createRequest({
         method: "GET",
@@ -28,7 +28,7 @@ test("[mock] date returned always true", async () => {
 
     const response = httpMocks.createResponse();
 
-    dateModel.isWeekend.mockResolvedValue(true);
+    // dateModel.isWeekend.mockResolvedValue(0);
 
     await dateHandler.date(request, response);
 
